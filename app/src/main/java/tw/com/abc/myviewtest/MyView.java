@@ -27,6 +27,9 @@ public class MyView extends View{
                 Log.i("geoff","A");
             }
         });
+
+        lines=new LinkedList<>();
+        recycle=new LinkedList<>();
     }
 
     @Override
