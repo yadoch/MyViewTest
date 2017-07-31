@@ -17,16 +17,25 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="btn1"
+        android:text="Clear"
+        android:onClick="clearMyView"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="btn2"
+        android:text="Undo"
+        android:onClick="undoMyView"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Redo"
+        android:onClick="redoMyView"
         />
 
 </LinearLayout>
     <tw.com.abc.myviewtest.MyView
+        android:id="@+id/myView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Hello World!"
