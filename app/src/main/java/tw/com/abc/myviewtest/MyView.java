@@ -34,7 +34,7 @@ public class MyView extends View{
 
     @Override
     protected void onDraw(Canvas canvas) {
-
+        //呈現畫面
         super.onDraw(canvas);
 
         // 設定筆
@@ -42,7 +42,7 @@ public class MyView extends View{
 
         paint.setColor(Color.BLUE);
         paint.setStrokeWidth(8);
-
+        // foreach 寫法
         for(LinkedList<HashMap<String,Float>> line: lines){
             for(int i=1; i<line.size();i++){
                 HashMap<String,Float> p0=line.get(i-1);
@@ -104,7 +104,7 @@ public class MyView extends View{
                 invalidate();
                 break;
         }
-
+        // 可以作範例,比較 true 和 false 和 super.onTouchEvent(event) 的差異
         return true;
         //return super.onTouchEvent(event);
     }
